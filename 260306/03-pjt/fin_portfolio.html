@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 네이게이션 바 -->
+  <nav class="navbar navbar-dark navbar-expand-lg bg-primary px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">SSAFY Bank</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fin_profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Financial Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 포트폴리오 수정 -->
+  <div class="Profile w-70 border m-4 p-3 rounded-3 shadow-sm">
+    <div class="header w-100">
+      <h1 class="text-center">포트폴리오 수정</h1>
+    </div>
+    <form>
+      <div class="mb-3">
+        <label for="username" class="form-label">회원 번호</label>
+        <div class="card">
+          <div class="card-body py-1">
+            1
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="username" class="form-label">ID</label>
+        <div class="card">
+          <div class="card-body py-1">
+            김싸피
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">투자 성향</label>
+        <div class="d-flex">
+          <div class="w-100 d-flex">
+            <div class="form-check me-3 align-self-center">
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+              <label class="form-check-label" for="radioDefault1">
+                안정형
+              </label>
+            </div>
+            <div class="form-check me-3 align-self-center">
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+              <label class="form-check-label" for="radioDefault2">
+                중립적
+              </label>
+            </div>
+            <div class="form-check me-3 align-self-center">
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+              <label class="form-check-label" for="radioDefault2">
+                공격적
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-info text-white p-1 flex-shrink-1" type="button"
+            id="button-addon2">Update</button>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="nickname" class="form-label">최애은행</label>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="주로 사용하는 은행을 입력해주세요." aria-label="Recipient’s username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-info text-white p-1" type="button"
+            id="button-addon2">Update</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

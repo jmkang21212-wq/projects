@@ -1,0 +1,75 @@
+/* style.css */
+
+/* 1. 공통 변수 (컬러 팔레트) */
+:root {
+  /* 토스 메인 브랜드 컬러 (네비게이션 바 등 묵직한 신뢰감이 필요한 곳) */
+  --toss-core-blue: #0050FF;  
+  
+  /* 토스 UI 기본 파란색 (버튼, 활성화 탭 등 눈이 편안해야 하는 곳) */
+  --toss-blue: #3182f6;       
+  
+  --bg-light-gray: #f2f4f6;   /* 눈이 편안한 배경색 */
+  --stock-red: #f04452;       /* 상승 (빨강) */
+  --stock-blue: #3182f6;      /* 하락 (파랑 - 토스 블루와 통일하여 깔끔하게) */
+}
+
+/* 2. 전체 페이지 공통 스타일 */
+body { 
+  font-family: 'Pretendard', sans-serif; 
+  background-color: var(--bg-light-gray); 
+}
+
+/* 3. 커스텀 디자인 클래스 */
+
+/* 네비게이션 바 배경: 쨍하고 딥한 Core Blue 적용 */
+.bg-toss { 
+  background-color: var(--toss-core-blue) !important; 
+}
+
+/* 폼 전송/저장 버튼: 부드러운 Toss Blue 적용 */
+.btn-toss { 
+  background-color: var(--toss-blue); 
+  color: white; 
+  border: none;
+  border-radius: 8px; 
+  transition: background-color 0.2s ease; /* 부드러운 색상 전환 애니메이션 */
+}
+
+/* 버튼에 마우스를 올렸을 때(hover) 살짝 어두워지는 디테일 추가 */
+.btn-toss:hover {
+  background-color: #1b64da; 
+  color: white;
+}
+
+/* 4. 카드 UI 공통 스타일 */
+.custom-card {
+  background-color: white; 
+  border: none !important;
+  border-radius: 20px !important; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04) !important;
+}
+
+/* 5. 주식 등락 컬러 클래스 */
+.text-stock-up { color: var(--stock-red) !important; }
+.text-stock-down { color: var(--stock-blue) !important; }
+
+/* 프로필 이미지 크기 고정 */
+.profile-img {
+  width: 120px; 
+  height: 120px;
+  object-fit: cover; /* 이미지가 비율에 맞게 예쁘게 잘리도록 설정 */
+}
+
+/* 뱃지형 체크박스 (관심 종목) 스타일 */
+.btn-outline-toss {
+  border: 1px solid #e5e8eb;
+  color: #4e5968;
+  border-radius: 20px;
+}
+
+.btn-check:checked + .btn-outline-toss {
+  background-color: #e8f3ff;
+  border-color: var(--toss-blue);
+  color: var(--toss-blue);
+  font-weight: bold;
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SSAFY Bank - Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-toss px-4 shadow-sm">
+    <div class="container-fluid max-w-75">
+      <a class="navbar-brand fw-bold" href="ai_index.html">SSAFY Bank</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="ai_index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="ai_fin_portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold" href="ai_fin_profile.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="ai_fin_report.html">Financial Report</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5" style="max-width: 800px;">
+    <div class="custom-card p-4 mb-4">
+      <h4 class="fw-bolder mb-4">내 프로필</h4>
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center mb-3 mb-md-0">
+          <img class="rounded-circle shadow-sm profile-img" src="kakako-00.jpg" alt="Profile">
+        </div>
+        <div class="col-md-9">
+          <div class="mb-3">
+            <label class="form-label text-muted small fw-bold">자기 소개</label>
+            <div class="input-group">
+              <input type="text" class="form-control rounded-start-3" value="안녕하세요 부자입니다.">
+              <button class="btn btn-toss rounded-end-3" type="button">저장</button>
+            </div>
+          </div>
+          <div>
+            <label class="form-label text-muted small fw-bold d-block">관심 종목 (다중 선택)</label>
+            <div class="d-flex flex-wrap gap-2">
+              <input type="checkbox" class="btn-check" id="tag1">
+              <label class="btn btn-outline-toss px-3 py-1" for="tag1"># 정보기술</label>
+              
+              <input type="checkbox" class="btn-check" id="tag2" checked>
+              <label class="btn btn-outline-toss px-3 py-1" for="tag2"># 소비재</label>
+              
+              <input type="checkbox" class="btn-check" id="tag3">
+              <label class="btn btn-outline-toss px-3 py-1" for="tag3"># 금융</label>
+
+              <input type="checkbox" class="btn-check" id="tag4" checked>
+              <label class="btn btn-outline-toss px-3 py-1" for="tag4"># 암호화폐</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-card p-4 mb-5">
+      <h4 class="fw-bolder mb-4">기본 정보 및 자산</h4>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <span class="text-muted small">이름</span>
+            <div class="fs-5 fw-bold">김싸피</div>
+          </div>
+          <div class="mb-3">
+            <span class="text-muted small">나이</span>
+            <div class="fs-5 fw-bold">29세</div>
+          </div>
+          <div class="mb-3">
+            <span class="text-muted small">이메일</span>
+            <div class="input-group">
+              <input type="email" class="form-control border-0 bg-light" value="ssafy@example.com">
+              <button class="btn btn-light border text-primary" type="button">수정</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 bg-light rounded-4 p-4 d-flex flex-column justify-content-center">
+          <div class="mb-4">
+            <div class="text-muted small mb-1">총 자산</div>
+            <div class="d-flex align-items-baseline">
+              <div class="fs-2 fw-bolder me-1">10,000,000</div>
+              <span class="text-muted">원</span>
+            </div>
+          </div>
+          <div>
+            <div class="text-muted small mb-1">연봉</div>
+            <div class="d-flex align-items-baseline">
+              <div class="fs-3 fw-bold me-1">50,000,000</div>
+              <span class="text-muted">원</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
